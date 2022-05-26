@@ -17,13 +17,19 @@
           <!--Навигация по сайту-->
           <ul class="navigation-list">
             <li class="navigation-list-item">
-              <a class= "navigation-link" href="catalog.html">Каталог</a>
+              <a class= "navigation-link" href="catalog.html">
+                <span class="navigation-link-text">Каталог</span>
+              </a>
             </li>
             <li class="navigation-list-item">
-              <a class= "navigation-link" href="#">Доставка и оплата</a>
+              <a class= "navigation-link" href="#">
+                <span class="navigation-link-text">Доставка и оплата</span>
+              </a>
             </li>
             <li class="navigation-list-item">
-              <a class= "navigation-link" href="#">О компании</a>
+              <a class= "navigation-link" href="#">
+                <span class="navigation-link-text">О компании</span>
+              </a>
             </li>
           </ul>
         </nav>
@@ -39,12 +45,12 @@
           </li>
           <li class="navigation-list-item">
             <a class= "navigation-link" href="#">
-              Вход
+              <span class="navigation-link-text">Вход</span>
             </a>
           </li>
           <li class="navigation-list-item">
             <a class= "navigation-link" href="#">
-              Пусто
+              <span class="navigation-link-text">Пусто</span>
               <span class="visually-hidden">Корзина</span>
             </a>
           </li>
@@ -158,8 +164,10 @@
                 <h3 class="product-card-title">Малинка</h3>
                 <p class="product-card-text">Сливочное мороженое с малиновым джемом</p>
               </a>
-              <span class="product-card-price">310 ₽/кг</span>
-              <a class="product-card-button" href="#"></a>
+              <div class="price-button-container">
+                <span class="product-card-price">310 ₽/кг</span>
+                <a class="product-card-button" href="#"></a>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -167,8 +175,10 @@
                 <h3 class="product-card-title">Фисташка</h3>
                 <p class="product-card-text">Фисташковый пломбир с кусочками шоколада</p>
               </a>
-              <span class="product-card-price">340 ₽/кг</span>
-              <a class="product-card-button" href="#"></a>
+              <div class="price-button-container">
+                <span class="product-card-price">340 ₽/кг</span>
+                <a class="product-card-button" href="#"></a>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -176,8 +186,10 @@
                 <h3 class="product-card-title">Черника</h3>
                 <p class="product-card-text">Крем-брюле с черничным джемом</p>
               </a>
-              <span class="product-card-price">330 ₽/кг</span>
-              <a class="product-card-button" href="#"></a>
+              <div class="price-button-container">
+                <span class="product-card-price">330 ₽/кг</span>
+                <a class="product-card-button" href="#"></a>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -185,53 +197,58 @@
                 <h3 class="product-card-title">Бабл-гам</h3>
                 <p class="product-card-text">Ванильный пломбир со сладкой посыпкой</p>
               </a>
-              <span class="product-card-price">320 ₽/кг</span>
-              <a class="product-card-button" href="#"></a>
+              <div class="price-button-container">
+                <span class="product-card-price">320 ₽/кг</span>
+                <a class="product-card-button" href="#"></a>
+              </div>
             </li>
           </ul>
         </section>
         <section class="advantages">
-          <h2 class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">
-              <img class="advantages-icon" src="" width="" height="" alt="Изображение мороженого.">
-              <p class="advantages-text">
-                Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.
-              </p>
-            </li>
-            <li class="advantages-item">
-              <img class="advantages-icon" src="" width="" height="" alt="Изображение листа растения.">
-              <p class="advantages-text">
-                Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.
-              </p>
-            </li>
-            <li class="advantages-item">
-              <img class="advantages-icon" src="" width="" height="" alt="Изображение коровьей головы.">
-              <p class="advantages-text">
-                Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.
-              </p>
-            </li>
-            <li class="advantages-item">
-              <img class="advantages-icon" src="" width="" height="" alt="Изображение термометра.">
-              <p class="advantages-text">
-                Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.
-              </p>
-            </li>
-          </ul>
+          <div class="advantages-wrapper">
+            <h2 class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
+            <ul class="advantages-list">
+              <li class="advantages-item">
+                <img class="advantages-icon" src="" width="" height="" alt="Изображение мороженого.">
+                <p class="advantages-text">
+                  Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.
+                </p>
+              </li>
+              <li class="advantages-item">
+                <img class="advantages-icon" src="" width="" height="" alt="Изображение листа растения.">
+                <p class="advantages-text">
+                  Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.
+                </p>
+              </li>
+              <li class="advantages-item">
+                <img class="advantages-icon" src="" width="" height="" alt="Изображение коровьей головы.">
+                <p class="advantages-text">
+                  Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.
+                </p>
+              </li>
+              <li class="advantages-item">
+                <img class="advantages-icon" src="" width="" height="" alt="Изображение термометра.">
+                <p class="advantages-text">
+                  Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
         <div class="blog-article-newsletters-container">
           <article class="blog-article">
-            <h2 class="visually-hidden">Новая статья в блоге</h2>
-            <p class="blog-article-text">Новое в нашем блоге</p>
-            <a class="blog-article-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            <h2 class="blog-article-title">Новое в нашем блоге</p>
+            <h3 class="blog-article-text">10 способов сервировки фруктовых щербетов к столу</h3>
           </article>
           <section class="newsletters">
-            <h2 class="visually-hidden">Рассылка</h2>
-            <p class="newsletters-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="newsletters-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="text" name="email" placeholder="email@example.com">
-              <button class="button" type="submit">Отправить</button>
-            </form>
+            <div class="newsletters-wrapper">
+              <h2 class="visually-hidden">Рассылка</h2>
+              <p class="newsletters-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <form class="newsletters-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input type="text" name="email" placeholder="email@example.com">
+                <button class="button" type="submit">Отправить</button>
+              </form>
+            </div>
           </section>
         </div>
         <section class="delivery">
@@ -240,14 +257,16 @@
           <div class="delivery-form-container">
             <p class="delivery-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="delivery-form-date">
-                <label for="delivery-date">Дата</label>
-                <input type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020">
-              </p>
-              <p class="delivery-form-phone">
-                <label for="delivery-phone">Телефон</label>
-                <input type="text" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00">
-              </p>
+              <div class="date-phone-container">
+                <p class="delivery-form-date">
+                  <label for="delivery-date">Дата</label>
+                  <input type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020">
+                </p>
+                <p class="delivery-form-phone">
+                  <label for="delivery-phone">Телефон</label>
+                  <input type="text" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00">
+                </p>
+              </div>
               <p class="delivery-form-address">
                 <label for="delivery-address">Адрес</label>
                 <input type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
@@ -293,20 +312,20 @@
             </li>
           </ul>
         </section>
-        <section class="user-info">
+        <section class="user-information">
           <h2 class="visually-hidden">Информация</h2>
-          <ul class="user-info-list">
-            <li class="user-info-item">
-              <a class="user-info-link" href="#">Для поставщиков</a>
+          <ul class="user-information-list">
+            <li class="user-information-item">
+              <a class="user-information-link" href="#">Для поставщиков</a>
             </li>
-            <li class="user-info-item">
-              <a class="user-info-link" href="#">Наши документы</a>
+            <li class="user-information-item">
+              <a class="user-information-link" href="#">Наши документы</a>
             </li>
-            <li class="user-info-item">
-              <a class="user-info-link" href="#">О производстве</a>
+            <li class="user-information-item">
+              <a class="user-information-link" href="#">О производстве</a>
             </li>
-            <li class="user-info-item">
-              <a class="user-info-link" href="#">Экологические стандарты</a>
+            <li class="user-information-item">
+              <a class="user-information-link" href="#">Экологические стандарты</a>
             </li>
           </ul>
         </section>
