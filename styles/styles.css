@@ -1,3 +1,78 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Полужирный */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+*,*::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  
   background-color: #feafc3;
+}
+
+.main-page-container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.header-navigation-wrapper {
+  display: flex;
+}
+
+.modal {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(45,52,64,0.3);
+  visibility: hidden;
+}
+
+.modal-wrapper {
+  width: 570px;
+  height: 545px;
+  background-color: #ffffff;
+  padding: 64px;
+  visibility: hidden;
 }
